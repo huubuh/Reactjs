@@ -1,0 +1,84 @@
+.footer {
+    background-color:#1d2228;
+    color: white;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 24px;
+    
+}
+.sendEmail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.sendEmail input{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: aliceblue;
+    width: 350px;
+
+}
+.sendEmail button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb4c83;
+    height: 30px;
+    width: 60px;
+}
+
+.bottom{
+   color: #afb2b9;
+    display: flex; 
+
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: small;
+    gap: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: #afb2b9;
+}
+.footer-section{
+    flex-direction: column; 
+    align-items: flex-start;
+    text-align: left;
+   
+}
+.footer-section a{
+    display: block;
+    text-decoration: none;
+    color: #afb2b9;
+}
+.Recipes{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    text-align: left;
+  margin-right: 30px;
+
+}
+.Recipes a{
+    display: block;
+    text-decoration: none;
+    color: #afb2b9;
+    margin: 0;
+    padding: 0;
+
+}
