@@ -1,0 +1,40 @@
+.content-container{
+  display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: 2cm;
+  
+}
+.content-container >p{
+    font-size: 25px;
+    
+}
+.button-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-1{
+    background-color: #ffeff5;
+    color: #e39ab6;
+    border-radius: 20px;
+    
+}
+.btn-2{
+    background-color:#f4f0fe;
+    color: #a791da;
+    border-radius: 20px;
+}
+.btn-3{
+    background-color:#ffeff5;
+    color: #e39ab6;
+    border-radius: 20px;
+}
+.btn-4{
+    background-color: #edfcff;
+    color: #6ea2af;
+    border-radius: 20px;
+}

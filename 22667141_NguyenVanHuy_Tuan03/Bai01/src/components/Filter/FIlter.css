@@ -1,0 +1,119 @@
+.filter-container{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;;
+    border: 1px solid #ededed;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    
+}
+.filter-title{
+    color: black;
+
+}
+.menu-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+
+.filter-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}.toggle-icon{
+   font-size: 30px;
+   margin-right: 20px;
+   color: #da648e;
+}
+.filter-header> h3{
+    color: black;
+    margin-left: 30px;
+}
+.time-header > h3{
+    color: black;
+    margin-left: 30px;
+}
+.rating-header > h3{
+    color: black;
+    margin-left: 30px;
+}
+.filter-options{
+    color: black;
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 30px;
+}
+.option-left{
+    display: flex;
+    flex-direction: column;
+}
+.option-left div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.option-right{
+    display: flex;
+    flex-direction: column;
+}
+.option-right div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-time{
+   display: flex;
+   flex-direction: column;
+}
+.time-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.time-line{
+    
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 30px;
+   
+}
+.rating-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ededed;
+}
+
+.apply-button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    background-color: #f44b86;
+    color: white;
+}
+
+.section-time{
+    display: flex;
+   gap: 30px;
+    color: black;
+    font-size: small;
+    justify-content: center;
+}

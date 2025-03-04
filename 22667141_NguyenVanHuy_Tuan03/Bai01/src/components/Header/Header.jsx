@@ -8,7 +8,7 @@ const Header = () => {
             <div className="search-bar">
                 <input type="text" placeholder="      cakescascasa"/>
             </div>
-           <nav>
+           <nav className='nav'>
             <ul className="menu">
                 <li><a href="#">What to cook</a></li>
                 <li><a href="#">Recipes</a></li>
