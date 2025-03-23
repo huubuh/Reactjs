@@ -1,0 +1,105 @@
+.Navbar_Recipes{
+    color: black;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #e9e8ed;
+    height: 50px;
+    
+ 
+
+  
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product_items{
+    width: calc(25% - 40px);
+    overflow: hidden;
+    border-radius: 16px;
+    flex-direction: column;
+    color: black;
+    margin: 20px;
+    border: 1px solid whitesmoke;
+    
+}
+.product_items > img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.title_name{
+    height: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    font-weight: 600;
+    text-align: left;
+}
+.time{
+    width: 30%;
+    justify-content: center;
+    background-color: #f7dbe8;
+    display: flex;
+    text-align: left;
+    margin: 20px;
+    font-size: 14px;
+    color: #ca6a8c;
+    color:#e69eb7 ;
+    border-radius: 10px;
+}
+
+.Pagination{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    margin-bottom: 50px;
+    
+}
+.btn{
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #444;
+    
+}
+.btn.active {
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+.icon_btn{
+    width: 30px;
+    height: 30px;   
+}
+.Nav_Saved {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fce4ec;
+    color: #ec407a;
+    font-weight: bold;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 10px;
+  }
+.Nav_Folders{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.Nav_Genevieve{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
