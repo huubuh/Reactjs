@@ -6,8 +6,8 @@ const Overview = () => {
   return (
     <>
       <div className="flex flex-col mb-4">
-        <div className="flex flex-1 m-4 space-x-3">
-          <img src={Squaresfour} alt="" />
+        <div className="flex flex-1 m-4 space-x-3 items-center">
+          <img src={Squaresfour} alt="" className="w-5 h-5" />
           <p className="text-xl font-bold ">Overview</p>
         </div>
 
