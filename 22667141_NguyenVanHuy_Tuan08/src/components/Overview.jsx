@@ -27,6 +27,38 @@ const Overview = () => {
               <p className="text-gray-500">period of change</p>
             </div>
           </div>
+
+          <div className="bg-blue-100 w-1/3 p-5 rounded-md">
+            <div className="flex justify-between pb-3">
+              <div>
+                <p className="font-bold">Profit</p>
+                <span className="text-3xl font-bold">$32,218</span>
+              </div>
+              <div>
+                <img src={Dollar} alt="" />
+              </div>
+            </div>
+            <div className="flex  gap-2 ">
+              <p className="text-green-600 font-bold">5.39%</p>
+              <p className="text-gray-500">period of change</p>
+            </div>
+          </div>
+
+          <div className="bg-blue-50 w-1/3 p-5 rounded-md">
+            <div className="flex justify-between pb-3">
+              <div>
+                <p className="font-bold">New customer</p>
+                <span className="text-3xl font-bold">298</span>
+              </div>
+              <div>
+                <img src={Avatar} alt="" />
+              </div>
+            </div>
+            <div className="flex  gap-2 ">
+              <p className="text-green-600 font-bold">6.84%</p>
+              <p className="text-gray-500">period of change</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
