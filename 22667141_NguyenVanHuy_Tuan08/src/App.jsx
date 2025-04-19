@@ -1,8 +1,9 @@
 import "./App.css";
-import DataTable from "./components/DataTable";
+
 import Header from "./components/Header";
 import Overview from "./components/Overview";
 import Sidebar from "./components/Sidebar";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <div className="w-full h-full">
           <Header />
           <Overview />
-          <DataTable />
+          <Dashboard />
         </div>
       </div>
     </>
