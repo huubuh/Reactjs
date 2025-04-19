@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Create from "../assets/img/create.png";
 import Filetext from "../assets/img/File text 1.png";
 import EditUserModal from "../components/EditUserModal";
+import AddUserModal from "../components/AddUserModal";
 const getStatusStyle = (status) => {
   switch (status) {
     case "New":
@@ -20,6 +21,17 @@ const Dashboard = () => {
 
   const [currentPage, setCurrentPage] = useState(1);
   const [users, setUsers] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingUser, setEditingUser] = useState(null);
+  const [add, setAdd] = useState({
+    name: "",
+    company: "",
+    value: "",
+    date: "",
+    status: "New",
+    avatar: "",
+  });
+  const [isAddOpen, setIsAddOpen] = useState(false);
   useEffect(() => {
     fetch("http://localhost:3000/users")
       .then((res) => res.json())
@@ -67,9 +79,6 @@ const Dashboard = () => {
     return pages;
   };
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [editingUser, setEditingUser] = useState(null);
-
   const handleEdit = (userId) => {
     console.log("Fetching user with ID:", userId);
     fetch(`http://localhost:3000/users/${userId}`)
@@ -105,6 +114,22 @@ const Dashboard = () => {
         .then((data) => setUsers(data));
     });
   };
+
+  const handleAddSave = () => {
+    fetch("http://localhost:3000/users", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(add),
+    })
+      .then((res) => res.json())
+      .then(() => {
+        setIsAddOpen(false);
+        // Load lại danh sách user
+        fetch("http://localhost:3000/users")
+          .then((res) => res.json())
+          .then((data) => setUsers(data));
+      });
+  };
   return (
     <div className="p-6 bg-white ">
       <div className="flex justify-between items-center mb-4">
@@ -112,7 +137,10 @@ const Dashboard = () => {
           <img src={Filetext} alt="icon" className="w-5 h-5" />
           <h2 className="text-xl font-bold">Detailed report</h2>
         </div>
-        <button className="text-pink-600 border-2 border-pink-400 w-24 p-1 rounded-md hover:bg-pink-50 transition">
+        <button
+          onClick={() => setIsAddOpen(true)}
+          className="text-pink-600 border-2 border-pink-400 w-24 p-1 rounded-md hover:bg-pink-50 transition"
+        >
           Add
         </button>
       </div>
@@ -222,6 +250,14 @@ const Dashboard = () => {
           onClose={() => setIsModalOpen(false)}
           onChange={setEditingUser}
           onSave={handleSave}
+        />
+      )}
+      {isAddOpen && (
+        <AddUserModal
+          user={add}
+          onClose={() => setIsAddOpen(false)}
+          onChange={setAdd}
+          onSave={handleAddSave}
         />
       )}
     </div>
