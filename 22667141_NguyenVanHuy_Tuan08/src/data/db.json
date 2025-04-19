@@ -21,6 +21,513 @@
         "icon": "https://res.cloudinary.com/dicknpzdb/image/upload/v1744321915/nyp0l8dnydzxahwltjwt.png",
         "bg": "bg-blue-50"
       }
-    ]
+    ],
+    "users": [
+    {
+      "id": 1,
+      "name": "Elizabeth Lee",
+      "company": "AvatarSystems",
+      "value": "$359",
+      "date": "10/07/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
+    },
+    {
+      "id": 2,
+      "name": "Carlos Garcia",
+      "company": "SmoozeShift",
+      "value": "$747",
+      "date": "24/07/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096875/kvpitnukgyhfzn0vwqio.png"
+    },
+    {
+      "id": 3,
+      "name": "Elizabeth Bailey",
+      "company": "Prime Time Telecom",
+      "value": "$564",
+      "date": "08/08/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096897/jo1lkufziwhgcnpnpxnl.png"
+    },
+    {
+      "id": 4,
+      "name": "Ryan Brown",
+      "company": "OmniTech Corporation",
+      "value": "$541",
+      "date": "31/08/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096927/hy70ifslfvskxom6x9y4.png"
+    },
+    {
+      "id": 5,
+      "name": "Ryan Young",
+      "company": "DataStream Inc.",
+      "value": "$769",
+      "date": "01/05/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096953/se2uf9rzgtmgetc2idt1.png"
+    },
+    {
+      "id": 6,
+      "name": "Hailey Adams",
+      "company": "FlowRush",
+      "value": "$922",
+      "date": "10/06/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096980/oclsayiqbujzeleqtmid.png"
+    }
+    ,
+    {
+      "id": 7,
+      "name": "Sophia Johnson",
+      "company": "TechNova",
+      "value": "$812",
+      "date": "15/06/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
+    },
+    {
+      "id": 8,
+      "name": "James Wilson",
+      "company": "InnoSphere",
+      "value": "$645",
+      "date": "20/07/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096875/kvpitnukgyhfzn0vwqio.png"
+    },
+    {
+      "id": 9,
+      "name": "Mia Martinez",
+      "company": "CloudSync",
+      "value": "$734",
+      "date": "05/08/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096897/jo1lkufziwhgcnpnpxnl.png"
+    },
+    {
+      "id": 10,
+      "name": "Liam Davis",
+      "company": "DataLink",
+      "value": "$589",
+      "date": "12/09/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096927/hy70ifslfvskxom6x9y4.png"
+    },
+    {
+      "id": 11,
+      "name": "Olivia Garcia",
+      "company": "NetFusion",
+      "value": "$921",
+      "date": "18/10/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096953/se2uf9rzgtmgetc2idt1.png"
+    },
+    {
+      "id": 12,
+      "name": "Noah Martinez",
+      "company": "StreamLine",
+      "value": "$478",
+      "date": "25/11/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096980/oclsayiqbujzeleqtmid.png"
+    },
+    {
+      "id": 13,
+      "name": "Emma Brown",
+      "company": "TechNova",
+      "value": "$812",
+      "date": "15/06/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
+    },
+    {
+      "id": 14,
+      "name": "William Wilson",
+      "company": "InnoSphere",
+      "value": "$645",
+      "date": "20/07/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096875/kvpitnukgyhfzn0vwqio.png"
+    },
+    {
+      "id": 15,
+      "name": "Isabella Martinez",
+      "company": "CloudSync",
+      "value": "$734",
+      "date": "05/08/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096897/jo1lkufziwhgcnpnpxnl.png"
+    },
+    {
+      "id": 16,
+      "name": "Lucas Davis",
+      "company": "DataLink",
+      "value": "$589",
+      "date": "12/09/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096927/hy70ifslfvskxom6x9y4.png"
+    },
+    {
+      "id": 17,
+      "name": "Amelia Garcia",
+      "company": "NetFusion",
+      "value": "$921",
+      "date": "18/10/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096953/se2uf9rzgtmgetc2idt1.png"
+    },
+    {
+      "id": 18,
+      "name": "Mason Martinez",
+      "company": "StreamLine",
+      "value": "$478",
+      "date": "25/11/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096980/oclsayiqbujzeleqtmid.png"
+    },
+    {
+      "id": 19,
+      "name": "Charlotte Brown",
+      "company": "TechNova",
+      "value": "$812",
+      "date": "15/06/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
+    },
+    {
+      "id": 20,
+      "name": "Ethan Wilson",
+      "company": "InnoSphere",
+      "value": "$645",
+      "date": "20/07/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096875/kvpitnukgyhfzn0vwqio.png"
+    },
+    {
+      "id": 21,
+      "name": "Harper Martinez",
+      "company": "CloudSync",
+      "value": "$734",
+      "date": "05/08/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096897/jo1lkufziwhgcnpnpxnl.png"
+    },
+    {
+      "id": 22,
+      "name": "Logan Davis",
+      "company": "DataLink",
+      "value": "$589",
+      "date": "12/09/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096927/hy70ifslfvskxom6x9y4.png"
+    },
+    {
+      "id": 23,
+      "name": "Avery Garcia",
+      "company": "NetFusion",
+      "value": "$921",
+      "date": "18/10/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096953/se2uf9rzgtmgetc2idt1.png"
+    },
+    {
+      "id": 24,
+      "name": "Elijah Martinez",
+      "company": "StreamLine",
+      "value": "$478",
+      "date": "25/11/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096980/oclsayiqbujzeleqtmid.png"
+    },
+    {
+      "id": 25,
+      "name": "Ella Brown",
+      "company": "TechNova",
+      "value": "$812",
+      "date": "15/06/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
+    },
+    {
+      "id": 26,
+      "name": "Aiden Wilson",
+      "company": "InnoSphere",
+      "value": "$645",
+      "date": "20/07/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096875/kvpitnukgyhfzn0vwqio.png"
+    },
+    {
+      "id": 27,
+      "name": "Scarlett Martinez",
+      "company": "CloudSync",
+      "value": "$734",
+      "date": "05/08/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096897/jo1lkufziwhgcnpnpxnl.png"
+    },
+    {
+      "id": 28,
+      "name": "Henry Davis",
+      "company": "DataLink",
+      "value": "$589",
+      "date": "12/09/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096927/hy70ifslfvskxom6x9y4.png"
+    },
+    {
+      "id": 29,
+      "name": "Grace Garcia",
+      "company": "NetFusion",
+      "value": "$921",
+      "date": "18/10/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096953/se2uf9rzgtmgetc2idt1.png"
+    },
+    {
+      "id": 30,
+      "name": "Sebastian Martinez",
+      "company": "StreamLine",
+      "value": "$478",
+      "date": "25/11/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096980/oclsayiqbujzeleqtmid.png"
+    },
+    {
+      "id": 31,
+      "name": "Lillian Brown",
+      "company": "TechNova",
+      "value": "$812",
+      "date": "15/06/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
+    },
+    {
+      "id": 32,
+      "name": "Jack Wilson",
+      "company": "InnoSphere",
+      "value": "$645",
+      "date": "20/07/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096875/kvpitnukgyhfzn0vwqio.png"
+    },
+    {
+      "id": 33,
+      "name": "Victoria Martinez",
+      "company": "CloudSync",
+      "value": "$734",
+      "date": "05/08/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096897/jo1lkufziwhgcnpnpxnl.png"
+    },
+    {
+      "id": 34,
+      "name": "Oliver Davis",
+      "company": "DataLink",
+      "value": "$589",
+      "date": "12/09/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096927/hy70ifslfvskxom6x9y4.png"
+    },
+    {
+      "id": 35,
+      "name": "Eleanor Garcia",
+      "company": "NetFusion",
+      "value": "$921",
+      "date": "18/10/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096953/se2uf9rzgtmgetc2idt1.png"
+    },
+    {
+      "id": 36,
+      "name": "Benjamin Martinez",
+      "company": "StreamLine",
+      "value": "$478",
+      "date": "25/11/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096980/oclsayiqbujzeleqtmid.png"
+    },
+    {
+      "id": 37,
+      "name": "Aria Brown",
+      "company": "TechNova",
+      "value": "$812",
+      "date": "15/06/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
+    },
+    {
+      "id": 38,
+      "name": "Daniel Wilson",
+      "company": "InnoSphere",
+      "value": "$645",
+      "date": "20/07/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096875/kvpitnukgyhfzn0vwqio.png"
+    },
+    {
+      "id": 39,
+      "name": "Penelope Martinez",
+      "company": "CloudSync",
+      "value": "$734",
+      "date": "05/08/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096897/jo1lkufziwhgcnpnpxnl.png"
+    },
+    {
+      "id": 40,
+      "name": "Matthew Davis",
+      "company": "DataLink",
+      "value": "$589",
+      "date": "12/09/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096927/hy70ifslfvskxom6x9y4.png"
+    },
+    {
+      "id": 41,
+      "name": "Aurora Garcia",
+      "company": "NetFusion",
+      "value": "$921",
+      "date": "18/10/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096953/se2uf9rzgtmgetc2idt1.png"
+    },
+    {
+      "id": 42,
+      "name": "Henry Martinez",
+      "company": "StreamLine",
+      "value": "$478",
+      "date": "25/11/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096980/oclsayiqbujzeleqtmid.png"
+    },
+    {
+      "id": 43,
+      "name": "Hazel Brown",
+      "company": "TechNova",
+      "value": "$812",
+      "date": "15/06/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
+    },
+    {
+      "id": 44,
+      "name": "Leo Wilson",
+      "company": "InnoSphere",
+      "value": "$645",
+      "date": "20/07/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096875/kvpitnukgyhfzn0vwqio.png"
+    },
+    {
+      "id": 45,
+      "name": "Violet Martinez",
+      "company": "CloudSync",
+      "value": "$734",
+      "date": "05/08/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096897/jo1lkufziwhgcnpnpxnl.png"
+    },
+    {
+      "id": 46,
+      "name": "Samuel Davis",
+      "company": "DataLink",
+      "value": "$589",
+      "date": "12/09/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096927/hy70ifslfvskxom6x9y4.png"
+    },
+    {
+      "id": 47,
+      "name": "Luna Garcia",
+      "company": "NetFusion",
+      "value": "$921",
+      "date": "18/10/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096953/se2uf9rzgtmgetc2idt1.png"
+    },
+    {
+      "id": 48,
+      "name": "Sebastian Martinez",
+      "company": "StreamLine",
+      "value": "$478",
+      "date": "25/11/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096980/oclsayiqbujzeleqtmid.png"
+    },
+    {
+      "id": 49,
+      "name": "Chloe Brown",
+      "company": "TechNova",
+      "value": "$812",
+      "date": "15/06/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
+    },
+    {
+      "id": 50,
+      "name": "Nathan Wilson",
+      "company": "InnoSphere",
+      "value": "$645",
+      "date": "20/07/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096875/kvpitnukgyhfzn0vwqio.png"
+    },
+    {
+      "id": 51,
+      "name": "Stella Martinez",
+      "company": "CloudSync",
+      "value": "$734",
+      "date": "05/08/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096897/jo1lkufziwhgcnpnpxnl.png"
+    },
+    {
+      "id": 52,
+      "name": "Owen Davis",
+      "company": "DataLink",
+      "value": "$589",
+      "date": "12/09/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096927/hy70ifslfvskxom6x9y4.png"
+    },
+    {
+      "id": 53,
+      "name": "Ellie Garcia",
+      "company": "NetFusion",
+      "value": "$921",
+      "date": "18/10/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096953/se2uf9rzgtmgetc2idt1.png"
+    },
+    {
+      "id": 54,
+      "name": "Levi Martinez",
+      "company": "StreamLine",
+      "value": "$478",
+      "date": "25/11/2023",
+      "status": "Completed",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096980/oclsayiqbujzeleqtmid.png"
+    },
+    {
+      "id": 55,
+      "name": "Zoey Brown",
+      "company": "TechNova",
+      "value": "$812",
+      "date": "15/06/2023",
+      "status": "New",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
+    },
+    {
+      "id": 56,
+      "name": "Isaac Wilson",
+      "company": "InnoSphere",
+      "value": "$645",
+      "date": "20/07/2023",
+      "status": "In-progress",
+      "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096875/kvpitnukgyhfzn0vwqio.png"
+    }
+  ]
   }
   

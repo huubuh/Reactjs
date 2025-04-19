@@ -1,63 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Create from "../assets/img/create.png";
 import Filetext from "../assets/img/File text 1.png";
-import Avatar1 from "../assets/img/Avatar 1.png";
-import Avatar2 from "../assets/img/Avatar 2.png";
-import Avatar3 from "../assets/img/Avatar 3.png";
-import Avatar4 from "../assets/img/Avatar 4.png";
-import Avatar5 from "../assets/img/Avatar 5.png";
-import Avatar6 from "../assets/img/Avatar 6.png";
-
-const data = [
-  {
-    name: "Elizabeth Lee",
-    company: "AvatarSystems",
-    value: "$359",
-    date: "10/07/2023",
-    status: "New",
-    avatar: Avatar1,
-  },
-  {
-    name: "Carlos Garcia",
-    company: "SmoozeShift",
-    value: "$747",
-    date: "24/07/2023",
-    status: "New",
-    avatar: Avatar2,
-  },
-  {
-    name: "Elizabeth Bailey",
-    company: "Prime Time Telecom",
-    value: "$564",
-    date: "08/08/2023",
-    status: "In-progress",
-    avatar: Avatar3,
-  },
-  {
-    name: "Ryan Brown",
-    company: "OmniTech Corporation",
-    value: "$541",
-    date: "31/08/2023",
-    status: "In-progress",
-    avatar: Avatar4,
-  },
-  {
-    name: "Ryan Young",
-    company: "DataStream Inc.",
-    value: "$769",
-    date: "01/05/2023",
-    status: "Completed",
-    avatar: Avatar5,
-  },
-  {
-    name: "Hailey Adams",
-    company: "FlowRush",
-    value: "$922",
-    date: "10/06/2023",
-    status: "Completed",
-    avatar: Avatar6,
-  },
-];
 
 const getStatusStyle = (status) => {
   switch (status) {
@@ -74,11 +17,17 @@ const getStatusStyle = (status) => {
 
 const Dashboard = () => {
   const itemsPerPage = 6;
-  const totalItems = data.length;
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
-  const [currentPage, setCurrentPage] = useState(1);
 
-  const paginatedData = data.slice(
+  const [currentPage, setCurrentPage] = useState(1);
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/users")
+      .then((res) => res.json())
+      .then((data) => setUsers(data));
+  }, []);
+  const totalItems = users.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const paginatedData = users.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
@@ -193,7 +142,7 @@ const Dashboard = () => {
         <div className="flex items-center gap-1">
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-            className="w-8 h-8 flex items-center justify-center border rounded-full text-gray-400 hover:text-gray-600"
+            className="w-8 h-8 flex items-center justify-center  rounded-full text-gray-400 hover:text-gray-600"
             disabled={currentPage === 1}
           >
             &lt;
@@ -204,7 +153,7 @@ const Dashboard = () => {
               key={idx}
               disabled={page === "..."}
               onClick={() => typeof page === "number" && setCurrentPage(page)}
-              className={`w-8 h-8 flex items-center justify-center rounded-full border 
+              className={`w-8 h-8 flex items-center justify-center rounded-full  
                 ${
                   page === currentPage
                     ? "bg-pink-500 text-white"
@@ -221,7 +170,7 @@ const Dashboard = () => {
             onClick={() =>
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
             }
-            className="w-8 h-8 flex items-center justify-center border rounded-full text-gray-400 hover:text-gray-600"
+            className="w-8 h-8 flex items-center justify-center  rounded-full text-gray-400 hover:text-gray-600"
             disabled={currentPage === totalPages}
           >
             &gt;
