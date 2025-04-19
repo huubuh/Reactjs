@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Create from "../assets/img/create.png";
 import Filetext from "../assets/img/File text 1.png";
-
+import EditUserModal from "../components/EditUserModal";
 const getStatusStyle = (status) => {
   switch (status) {
     case "New":
@@ -67,6 +67,32 @@ const Dashboard = () => {
     return pages;
   };
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingUser, setEditingUser] = useState(null);
+
+  const handleEdit = (userId) => {
+    console.log("Fetching user with ID:", userId);
+    fetch(`http://localhost:3000/users/${userId}`)
+      .then((res) => {
+        console.log("Response status:", res.status);
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((data) => {
+        console.log("Received user data:", data);
+        setEditingUser(data);
+        setIsModalOpen(true);
+      })
+      .catch((error) => {
+        console.error("Error fetching user:", error);
+        alert(
+          `Không thể tải thông tin người dùng (ID: ${userId}). Vui lòng thử lại sau.`
+        );
+      });
+  };
+
   return (
     <div className="p-6 bg-white ">
       <div className="flex justify-between items-center mb-4">
@@ -111,7 +137,7 @@ const Dashboard = () => {
                 <span className="font-bold">{row.name}</span>
               </td>
               <td className="px-4 py-4">{row.company}</td>
-              <td className="px-4 py-4">{row.value}</td>
+              <td className="px-4 py-4">${row.value}</td>
               <td className="px-4 py-4">{row.date}</td>
               <td className="px-4 py-4">
                 <span
@@ -123,7 +149,7 @@ const Dashboard = () => {
                 </span>
               </td>
               <td className="px-4 py-4">
-                <button>
+                <button onClick={() => handleEdit(row.id)}>
                   <img
                     src={Create}
                     alt="edit"
@@ -177,6 +203,14 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
+
+      {isModalOpen && (
+        <EditUserModal
+          user={editingUser}
+          onClose={() => setIsModalOpen(false)}
+          onChange={setEditingUser}
+        />
+      )}
     </div>
   );
 };

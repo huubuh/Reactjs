@@ -26,7 +26,7 @@ const Overview = () => {
               <div className="flex justify-between pb-3">
                 <div>
                   <p className="font-bold">{item.title}</p>
-                  <span className="text-3xl font-bold">{item.value}</span>
+                  <span className="text-3xl font-bold">${item.value}</span>
                 </div>
                 <div>
                   <img src={item.icon} alt="" />
