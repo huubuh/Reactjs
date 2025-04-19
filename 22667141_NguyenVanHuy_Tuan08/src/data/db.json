@@ -28,11 +28,11 @@
   "users": [
     {
       "id": "1",
-      "name": "Elizabeth Lee",
+      "name": "Elizabeth Lee 1",
       "company": "AvatarSystems",
-      "value": "358",
-      "date": "10/07/2023",
-      "status": "New",
+      "value": "333",
+      "date": "2025-04-25",
+      "status": "In-progress",
       "avatar": "https://res.cloudinary.com/dicknpzdb/image/upload/v1745096836/oolyw7fiy8vsh7tz5vyz.png"
     },
     {

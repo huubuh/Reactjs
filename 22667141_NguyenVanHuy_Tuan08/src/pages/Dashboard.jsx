@@ -92,7 +92,19 @@ const Dashboard = () => {
         );
       });
   };
-
+  const handleSave = () => {
+    fetch(`http://localhost:3000/users/${editingUser.id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(editingUser),
+    }).then(() => {
+      setIsModalOpen(false);
+      // Reload lại danh sách
+      fetch("http://localhost:3000/users")
+        .then((res) => res.json())
+        .then((data) => setUsers(data));
+    });
+  };
   return (
     <div className="p-6 bg-white ">
       <div className="flex justify-between items-center mb-4">
@@ -209,6 +221,7 @@ const Dashboard = () => {
           user={editingUser}
           onClose={() => setIsModalOpen(false)}
           onChange={setEditingUser}
+          onSave={handleSave}
         />
       )}
     </div>
