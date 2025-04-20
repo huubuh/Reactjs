@@ -18,7 +18,6 @@ const getStatusStyle = (status) => {
 
 const Dashboard = () => {
   const itemsPerPage = 6;
-
   const [currentPage, setCurrentPage] = useState(1);
   const [users, setUsers] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
